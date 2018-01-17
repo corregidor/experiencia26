@@ -11,7 +11,7 @@ class TodosController < ApplicationController
   end
 
   def new
-    @todos = Todo.new
+    @todo = Todo.new
   end
 
   def create
