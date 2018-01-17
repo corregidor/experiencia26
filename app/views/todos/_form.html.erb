@@ -1,0 +1,9 @@
+<%= form_with model: @todo, local: true do |f| %>
+  <%= f.label :description, "Description" %>
+  <%= f.text_field :description %>
+
+  <%= f.label :completed, "Completed" %>
+  <%= f.check_box :completed %>
+
+  <%= f.submit "Enviar" %>
+<% end %>

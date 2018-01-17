@@ -1,0 +1,17 @@
+<%= form_with model: @todos, local: true do |f| %>
+<div class="container well">
+  <div class="row">
+      <div class="col-md-6 col-md-offset-2">
+        <%= f.label :description, "Description" %>
+        <%= f.text_field :description %>
+      </div>
+      <div class="col-md-6 col-md-offset-2">
+        <%= f.label :completed, "Completed" %>
+        <%= f.check_box :completed %>
+      </div>
+      <div class="col-md-6 col-md-offset-4">
+        <%= f.submit "Enviar" , class:'btn btn-success' %>
+      </div>
+    </div>
+</div>
+<% end %>
